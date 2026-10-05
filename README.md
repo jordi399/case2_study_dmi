@@ -74,7 +74,6 @@ The tables don't fully reconcile. These points don't change the direction of the
 ```
 
 
-```
 
 Running the notebook regenerates every figure in `reports/figures/`.
 
