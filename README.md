@@ -31,7 +31,7 @@ A data interpretation case study. Leadership believes average spend per active c
 
 ### Q3. One-slide CEO summary
 
-[`reports/CEO_summary.pptx`](reports/CEO_summary.pptx) (image above; talking points are in the speaker notes).
+[`reports/CEO_summary.pptx`](reports/CEO_summary.pptx) and [`reports/CEO_summary.pdf`](reports/CEO_summary.pdf): page 1 is the CEO summary (image above), page 2 answers Q1–Q3. Talking points are in the speaker notes.
 
 **Recommendations**
 
@@ -67,13 +67,20 @@ The tables don't fully reconcile. These points don't change the direction of the
 │   ├── metrics.py            # KPI rebuild, Shapley decomposition, vintage & mix analysis, consistency checks
 │   └── plots.py              # shared chart style
 ├── reports/
-│   ├── CEO_summary.pptx      # Q3 one-slide summary
+│   ├── CEO_summary.pptx      # 2 pages: CEO summary + answers to Q1–Q3
+│   ├── CEO_summary.pdf       # same, as PDF
 │   ├── CEO_summary.png
 │   └── figures/              # charts exported by the notebook
 └── requirements.txt
 ```
 
+## How to run
 
+```bash
+python -m venv env && source env/bin/activate
+pip install -r requirements.txt
+jupyter nbconvert --execute --to notebook --inplace notebooks/01_spend_decline_analysis.ipynb
+```
 
 Running the notebook regenerates every figure in `reports/figures/`.
 
