@@ -73,12 +73,7 @@ The tables don't fully reconcile. These points don't change the direction of the
 └── requirements.txt
 ```
 
-## How to run
 
-```bash
-python -m venv env && source env/bin/activate
-pip install -r requirements.txt
-jupyter nbconvert --execute --to notebook --inplace notebooks/01_spend_decline_analysis.ipynb
 ```
 
 Running the notebook regenerates every figure in `reports/figures/`.
