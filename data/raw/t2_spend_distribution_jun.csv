@@ -1,0 +1,5 @@
+spend_bucket,lower_inr,upper_inr,pct_active_cards
+0,0,0,22
+1 - 5000,1,5000,26
+5000 - 20000,5000,20000,31
+> 20000,20000,,21
